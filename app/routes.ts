@@ -1,3 +1,8 @@
-import { type RouteConfig, index } from "@react-router/dev/routes";
+/*this file act as a map redirect user based the given URl */
 
-export default [index("routes/home.tsx")] satisfies RouteConfig;
+import {type RouteConfig,index ,route} from "@react-router/dev/routes";
+
+export default [
+    index("routes/home.tsx"),
+    route('/auth' , 'routes/auth.tsx')
+]satisfies RouteConfig
